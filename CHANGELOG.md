@@ -20,6 +20,7 @@ Breaking Change:
 - swap route hook and handler parameter position
 - remove soft-deprecated APIs
 - websocket/trace/autohead is now opt-in
+- WebSocket route context (`query`, `params`, `headers`, `cookie`, derived values) is on `ws` directly, e.g. `ws.query` instead of `ws.data.query`; `ws.data` is now the internal connection data
 - change several internal exports
 - `getSchemaValidator` renamed to `Validator.create`
 - `NotFoundError` renamed to `NotFound`
